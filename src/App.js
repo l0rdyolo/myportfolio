@@ -19,7 +19,13 @@ function App() {
     <BrowserRouter>
     <main>
       <Routes>
-        <Route path="/" element={<Home/>}  />
+        {/* <Route path="/" element={<Home setDisplayMainMenu={setDisplayMainMenu} />}  /> */}
+        <Route path="/" element={
+               displayMeunMenu ?
+          (<MainMenu setDisplayMainMenu={setDisplayMainMenu} />) :
+          (<Home setDisplayMainMenu={setDisplayMainMenu} />)
+        }  />
+
         <Route path="/about" element={<About/>}  />
 
       </Routes>

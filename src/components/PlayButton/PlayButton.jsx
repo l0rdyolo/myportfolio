@@ -4,7 +4,7 @@ import "./PlayButton.scss"
 export const PlayButton = ({ setDisplayMainMenu }) => {
 
     const handleClick = function () {
-        console.log("a")
+        console.log("open main menu")
         setDisplayMainMenu(true);
     }
 
