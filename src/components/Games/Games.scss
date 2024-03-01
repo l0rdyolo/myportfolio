@@ -1,0 +1,34 @@
+.game-container{
+    height: 100vh;
+    display: flex;
+    background-color: black;
+
+    .logo-container{
+        position: relative;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .xp-logo{
+        width: auto;
+        height: 300px;
+    }
+
+    p{
+        color: white;
+        position: absolute;
+        left: 15px;
+        top: 180px;
+        font-size: 102px;
+    }
+
+    .xp-loader{
+        height: 35px;
+        width: auto;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+}

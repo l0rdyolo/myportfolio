@@ -5,6 +5,8 @@ import { MainMenu } from './components/MainMenu/MainMenu';
 import { useState } from 'react';
 import './App.scss';
 import { About } from './components/About/About';
+import { Games } from './components/Games/Games';
+
 
 function App() {
   const [displayMeunMenu, setDisplayMainMenu] = useState();
@@ -27,6 +29,7 @@ function App() {
         }  />
 
         <Route path="/about" element={<About/>}  />
+        <Route path="/games" element={<Games/>}  />
 
       </Routes>
     </main>
